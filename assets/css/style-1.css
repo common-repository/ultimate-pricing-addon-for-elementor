@@ -1,0 +1,142 @@
+/**
+Version: 1.0.0
+ */
+.wpp-pricing-table {
+    color: #B185E8;
+    background: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    padding: 28px 20px;
+    margin: 0 15px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.wpp-pricing-table:before {
+    content: '';
+    background: linear-gradient(#ebd3ff, transparent);
+    border-radius: 30% 30% 0 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 160px;
+    bottom: 0;
+}
+
+.wpp-pricing-table .pricing-header {
+    margin: 0 0 20px;
+}
+
+.wpp-pricing-table .title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.wpp-pricing-table .price-value {
+    height: 170px;
+    width: 170px;
+    padding: 50px 10px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    border: 2px solid #B383EB;
+    position: relative;
+    z-index: 1;
+}
+
+.wpp-pricing-table .price-value:before {
+    content: '';
+    background: linear-gradient(to top, #ebd3ff, transparent);
+    border-radius: 50%;
+    border: 2px solid #B383EB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    z-index: -1;
+}
+
+.wpp-pricing-table .price-value .amount {
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    display: block;
+}
+
+.wpp-pricing-table .price-value .duration {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    display: block;
+}
+
+.wpp-pricing-table .pricing-content {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 25px;
+    list-style: none;
+    display: inline-block;
+}
+
+.wpp-pricing-table .pricing-content li {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 0;
+    margin: 0 0 13px;
+    position: relative;
+}
+
+.wpp-pricing-table .pricing-content li:last-child {
+    margin-bottom: 0;
+}
+
+.wpp-pricing-table .pricing-content li i {
+    margin-right: 5px;
+}
+
+.wpp-pricing-table .pricing-signup a {
+    color: #fff;
+    background-color: #B185E8;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+.wpp-pricing-table .pricing-signup a:hover {
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.wpp-pricing-table .pricing-signup a:before {
+    content: '';
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    transform: scale(0.9, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.wpp-pricing-table .pricing-signup a:hover:before {
+    width: 100%;
+}
+
+@media only screen and (max-width: 990px) {
+    .wpp-pricing-table {
+        margin: 0 15px 40px;
+    }
+}
